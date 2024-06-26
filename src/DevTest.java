@@ -24,6 +24,10 @@ public class DevTest
         double rangeDouble = SafeInput.getRangedDouble(in, "Enter the wrestler's weight", 133.0, 140.99999);
         System.out.println("The wrestler's weight is: " + rangeDouble);
 
+        boolean continueYN = SafeInput.getYNConfirm(in, "Enter Y or N to turn them into true or false");
+        System.out.println("You selected: " + continueYN);
 
+        String phoneNumber = SafeInput.getRegExString(in, "Enter your phone number [xxx-xxx-xxxx]", "\\d{3}-\\d{3}-\\d{4}");
+        System.out.println("You entered: " + phoneNumber);
     }
 }

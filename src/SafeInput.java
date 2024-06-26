@@ -139,11 +139,11 @@ public class SafeInput
 
     }
 
-    public static boolean getYNConfirm(Scanner pipe, String prompt)
-    {
+    public static boolean getYNConfirm(Scanner pipe, String prompt) {
         String yNConfirm = "Y";
         boolean yNConfirmed = false;
-        boolean isDone;
+        boolean isDone = false;
+        do {
             System.out.print("\n" + prompt + " [Y/N]: ");
             yNConfirm = pipe.nextLine();
             if (yNConfirm.equalsIgnoreCase("Y"))
@@ -159,12 +159,35 @@ public class SafeInput
             else
             {
                 System.out.println("You must enter a valid response [Y/N] not: " + yNConfirm);
+                isDone = false;
             }
+        }while (!isDone);
 
         return yNConfirmed;
 
     }
 
+    public static String getRegExString(Scanner pipe, String prompt, String regEx)
+    {
+        String userInput = "";
+        boolean thisWorks = false;
+        do
+        {
+            System.out.print("\n" + prompt + ": ");
+            userInput = pipe.nextLine();
+            if (userInput.matches(regEx))
+            {
+                thisWorks = true;
+            }
+            else
+            {
+                System.out.println("Formatting error: " + userInput);
+            }
+        }while(!thisWorks);
+
+        return userInput;
+
+    }
 
 
 }
