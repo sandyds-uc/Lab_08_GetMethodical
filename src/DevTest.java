@@ -9,7 +9,7 @@ public class DevTest // class
 {
     /**
      *
-     * @param args
+     * @param args main method without specific parameters & void return
      */
     public static void main(String[] args) // main method
     {

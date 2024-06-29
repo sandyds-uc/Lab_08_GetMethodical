@@ -7,7 +7,7 @@ public class CtoFTableDisplay // class CtoFTableDisplay
 {
     /**
      *
-     * @param args
+     * @param args main method without specific parameters and a void return
      */
     public static void main(String[] args) // main()
     {
@@ -26,4 +26,4 @@ public class CtoFTableDisplay // class CtoFTableDisplay
             double fVal = cVal * 9.0/5 + 32; // calculate celsius to fahrenheit & store in fahrenheit variable
             return fVal; // return fahrenheit
         } // end method
-} // end clASS
+} // end class

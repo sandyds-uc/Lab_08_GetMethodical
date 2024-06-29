@@ -26,6 +26,12 @@ public class SafeInput // class SafeInput library
 
     } // end method
 
+    /**
+     *
+     * @param pipe a Scanner to read from System.in
+     * @param prompt prompt for user
+     * @return an integer response
+     */
     public static int getInt(Scanner pipe, String prompt) // method to get an integer
     {
         int value = 0; // declare & initialize the integer
@@ -50,6 +56,12 @@ public class SafeInput // class SafeInput library
         return value; // return the user's integer
     } // end method
 
+    /**
+     *
+     * @param pipe a Scanner to read from System.in
+     * @param prompt prompt for user
+     * @return a double response
+     */
     public static double getDouble(Scanner pipe, String prompt) // method to get a double
     {
         double value = 0.0; // declare & initialize the double
@@ -75,6 +87,14 @@ public class SafeInput // class SafeInput library
 
     } // end method
 
+    /**
+     *
+     * @param pipe a Scanner to read from System.in
+     * @param prompt prompt for user
+     * @param low minimum value
+     * @param high maximum value
+     * @return an integer response in a range
+     */
     public static int getRangedInt(Scanner pipe, String prompt, int low, int high) // method to get an integer in a range
     {
         int value = 0; // declare & initialize the integer
@@ -107,6 +127,14 @@ public class SafeInput // class SafeInput library
 
     } // end method
 
+    /**
+     *
+     * @param pipe a Scanner to read from System.in
+     * @param prompt prompt for user
+     * @param low minimum value
+     * @param high maximum value
+     * @return a double response in a range
+     */
     public static double getRangedDouble(Scanner pipe, String prompt, double low, double high) // method to get a double in a range
     {
         double value = 0.0; // declare & initialize double in value
@@ -139,6 +167,12 @@ public class SafeInput // class SafeInput library
 
     } // end method
 
+    /**
+     *
+     * @param pipe a Scanner to read System.in
+     * @param prompt prompt for user
+     * @return a boolean response
+     */
     public static boolean getYNConfirm(Scanner pipe, String prompt) // method for user to enter Y or N
     {
         String yNConfirm = "Y"; // declare & initialize Y in variable
@@ -168,6 +202,13 @@ public class SafeInput // class SafeInput library
 
     } // end method
 
+    /**
+     *
+     * @param pipe a Scanner to read System.in
+     * @param prompt prompt for user
+     * @param regEx pattern that input must follow
+     * @return String response that fits regEx pattern
+     */
     public static String getRegExString(Scanner pipe, String prompt, String regEx) // method to ensure user input follows specified format
     {
         String userInput = ""; // delcare & initialize variable to store user input
@@ -190,6 +231,11 @@ public class SafeInput // class SafeInput library
 
     } // end method
 
+    /**
+     *
+     * @param pipe a Scanner to read System.in
+     * @param prompt prompt for user
+     */
     public static void prettyHeader(Scanner pipe, String prompt) // method to display a user message with a header
     {
         System.out.println(); // clear a line for visual effects
