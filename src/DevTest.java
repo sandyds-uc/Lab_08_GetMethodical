@@ -17,8 +17,8 @@ public class DevTest // class
 
         String firstName = SafeInput.getNonZeroLenString(in, "Enter your First Name"); // call getNonZeroLenString method
         System.out.println("Your first name is: " + firstName); // output getNonZeroLenString method
-        String lastName = SafeInput.getNonZeroLenString(in, "Enter your Last Name"); // call getNonZeroLenString method
-        System.out.println("Your last name is: " + lastName); // output getNonZeroLenString method
+        // String lastName = SafeInput.getNonZeroLenString(in, "Enter your Last Name"); // call getNonZeroLenString method
+        // System.out.println("Your last name is: " + lastName); // output getNonZeroLenString method
 
         int num = SafeInput.getInt(in, "Enter a number"); // call getInt method
         System.out.println("The number you entered is: " + num); // output getInt method

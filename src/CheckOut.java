@@ -9,7 +9,7 @@ public class CheckOut // class CheckOut
 {
     /**
      *
-     * @param args
+     * @param args main method without specific parameters & void return
      */
     public static void main(String[] args) // main()
     {
